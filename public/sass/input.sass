@@ -1,0 +1,117 @@
+$primary-background-color: #479f75
+$h1-color: #d1e6dd
+$font-family: 'roboto_slabregular' ,sans-serif
+$giallo-ocra: #fec107
+$verde-chiaro: #76b799
+$bordi-arrotondati: 20px
+$grigio-chiaro: #cdcdcd
+$form-grigio-celeste: #d1e6dd
+
+
+@font-face
+    font-family: 'roboto_slabregular'
+    src: url('RobotoSlab-Regular-webfont.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+
+
+
+*
+  margin: 0px
+  padding: 0px
+  box-sizing: border-box
+
+
+
+body
+
+  background-color: $primary-background-color
+  text-align: center
+  margin: auto
+  font-family: $font-family
+
+h1
+
+  color: $h1-color
+  margin: 30px
+  margin-bottom: 60px
+
+
+
+h2
+
+  margin-top: 20px
+
+a
+
+  text-decoration: none
+  color: white
+  font-size: 1.5em
+
+
+a:hover
+
+  transition: 0.3s
+  color: $giallo-ocra
+
+
+nav
+  padding: 15px
+  background-color: $verde-chiaro
+
+
+.form-select
+
+  width: 200px
+  margin : auto
+  margin-bottom: 10px
+  border-radius: $bordi-arrotondati
+
+
+.btn
+
+  margin: 10px
+
+
+.btn-warning
+
+  width: 120px
+  padding-leftpadding-right: 60px
+  margin-bottom: 30px
+
+
+
+.btn-outline-dark
+
+  border-radius: 20px
+  background-color: white
+  border-color: $grigio-chiaro
+
+
+
+form
+
+  border-radius: 50px
+  background-color: $form-grigio-celeste
+  margin: 20px
+  display: flex
+  flex-direction: column
+
+
+.wrapper
+
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+
+
+
+.home
+    font-size: 20px
+    width: 450px
+    border-radius: 50px
+    background-color: $form-grigio-celeste
+    margin: 20px
+    text-align: center
+    padding: 20px
+    margin: auto
