@@ -15,7 +15,7 @@
 use App\Model\Insert;
 
 $outputgiornaliero= new Insert;
-$outputgiornaliero->Outputgiornaliero(compact('result')
+$outputgiornaliero->OutputGiornaliero(compact('result')
 
     );
 

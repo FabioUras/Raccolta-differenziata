@@ -1,6 +1,6 @@
 <?php
 
-function datatranslate(){
+function daytranslate(){
 
 $timestamp = strtotime("now");
 

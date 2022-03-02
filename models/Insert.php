@@ -41,11 +41,12 @@ class Insert
     }
 
 
-   public function OutputGiornaliero($compact) {
+   public function OutputGiornaliero($result) {  //Accetta come argomento il risultato ($result) della query SELECT, trovandosi $result all'esterno della funzione questa non è in grado di leggerlo di conseguenza lo "importiamo" attraverso la funzione $compact e ne estriamo l'array con estract()
 
-    extract($compact);
 
-    $data=datatranslate();
+    extract($result);
+
+    $data=daytranslate();
 
 
      switch($data){
@@ -55,6 +56,7 @@ class Insert
               if($result[0]->Rifiuto==''){
 
                 echo 'Nessun ritiro impostato per oggi' . "<br>" ;
+
               }else{
 
                 echo 'Oggi ritirano: ' .  $result[0]->Rifiuto . ', alle ore: ' .
@@ -129,7 +131,7 @@ class Insert
 
                  }else{
 
-                 echo 'Oggi ritirano: ' .  $result[1]->Rifiuto1 . ', alle ore: ' .
+                 echo 'Oggi ritirano: ' .  $result[2]->Rifiuto1 . ', alle ore: ' .
 
                  $result[2]->Orario_ritiro1;
 
